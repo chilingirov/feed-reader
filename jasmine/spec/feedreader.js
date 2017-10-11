@@ -52,9 +52,9 @@ $(function() {
         //Check if the menu changes visibility when is clicked
         it("Menu changes on click", function() {
             menu.click();
-            expect($('body').hasClass('menu-hidden')).toEqual(false);
+            expect($('body').hasClass('menu-hidden')).toBeFalsy();
             menu.click();
-            expect($('body').hasClass('menu-hidden')).toEqual(true);
+            expect($('body').hasClass('menu-hidden')).toBeTruthy();
         });
     });
 
@@ -69,7 +69,7 @@ $(function() {
 
         //Check if when the loadFeed function is called there is at least one .entry element within the .feed container
         it("At least one entry in feed container", function() {
-            var entries = document.getElementsByClassName("entry").length;
+            var entries = document.querySelectorAll(".feed .entry").length;
             expect(entries).toBeGreaterThan(0);
         });
 
