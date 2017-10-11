@@ -10,7 +10,7 @@ Whether you work in an organization that uses test-driven development or in an o
 
 ## How to run
 
-1. Download the zip file in a folder in your computer.
+1. Download the zip file in a folder on your computer.
 2. Extract the files in the folder
 3. Open index.html in your browser
 

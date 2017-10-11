@@ -95,7 +95,7 @@ $(function() {
             expect(initFeed).not.toEqual(newFeed);
             console.log(initFeed);
             console.log(initFeed);
-        })
-    })
+        });
+    });
 
 }());
